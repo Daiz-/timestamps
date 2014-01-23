@@ -1,0 +1,27 @@
+{
+  "name": "timestamps",
+  "version": "0.1.0",
+  "description": "Parse and format video and ASS subtitle timestamps.",
+  "author": "Daiz <taneli.vatanen@gmail.com>",
+  "license": "MIT",
+  "main": "./lib/time.js",
+  "dependencies": {
+    "LiveScript": "~1.2.0",
+    "shelljs": "~0.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "postinstall": "lsc make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Daiz-/timestamps.git"
+  },
+  "keywords": [
+    "video",
+    "subtitle",
+    "subtitles",
+    "timestamp",
+    "ass"
+  ]
+}
