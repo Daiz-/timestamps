@@ -66,3 +66,5 @@ time =
   ass: (ms) ->
     {hh, mm, ss, cs} = time.parts ms
     "#hh:#{zpad mm}:#{zpad ss}.#{zpad cs}"
+
+module.exports = time
