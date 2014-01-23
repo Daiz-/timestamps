@@ -56,3 +56,8 @@ time =
     ms = ~~  (ms - hh * HOUR - mm * MINUTE - ss * SECOND + 0.5)
 
     {hh, mm, ss, cs, ms}
+
+  # Get full timestamp as string from millisecond input value.
+  stamp: (ms) ->
+    {hh, mm, ss, ms} = time.parts ms
+    "#{zpad hh}:#{zpad mm}:#{zpad ss}.#{zpad ms, 3}"
