@@ -45,3 +45,14 @@ time =
     ss = parse-int res.3, 10
     ms = parse-int res.4, 10
     ms * ASS + ss * SECOND + mm * MINUTE + hh * HOUR
+
+  # Takes a millisecond value as input.
+  # Returns hours, minutes, seconds, centiseconds and milliseconds as an object.
+  parts: (ms) ->
+    hh = ~~  (ms / HOUR)
+    mm = ~~ ((ms - hh * HOUR) / MINUTE)
+    ss = ~~ ((ms - hh * HOUR - mm * MINUTE) / SECOND)
+    cs = ~~ ((ms - hh * HOUR - mm * MINUTE - ss * SECOND) / 10 + 0.5)
+    ms = ~~  (ms - hh * HOUR - mm * MINUTE - ss * SECOND + 0.5)
+
+    {hh, mm, ss, cs, ms}
