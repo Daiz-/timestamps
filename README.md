@@ -2,7 +2,7 @@
 
 *timestamps* is a small Node.js module for parsing and formatting video and ASS subtitle timestamps.
 
-# Installation
+## Installation
 
 timestamps is available via npm:
 
@@ -10,7 +10,7 @@ timestamps is available via npm:
 $ npm install timestamps
 ```
 
-# Usage
+## Usage
 
 ```javascript
 var time = require('timestamps');
