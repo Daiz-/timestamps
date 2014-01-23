@@ -28,3 +28,4 @@ time.ass(test1); time.ass(test2);       // -> "1:24:22.20", "1:03:45.21"
 // If you need simple zero padding, get the 'zpad' module from npm.
 time.parts(test1);                      // -> {hh: 1, mm: 24, ss: 22, cs: 20, ms: 203}
 time.parts(test2);                      // -> {hh: 1, mm:  3, ss: 45, cs: 21, ms: 210}
+```
