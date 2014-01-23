@@ -61,3 +61,8 @@ time =
   stamp: (ms) ->
     {hh, mm, ss, ms} = time.parts ms
     "#{zpad hh}:#{zpad mm}:#{zpad ss}.#{zpad ms, 3}"
+
+  # Get ASS timestamp as string from millisecond input value.
+  ass: (ms) ->
+    {hh, mm, ss, cs} = time.parts ms
+    "#hh:#{zpad mm}:#{zpad ss}.#{zpad cs}"
