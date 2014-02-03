@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "LiveScript": "~1.2.0",
-    "shelljs": "~0.2.6",
+    "shelljs": "~0.2.6"
   },
   "scripts": {
     "prepublish": "lsc make"
